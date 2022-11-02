@@ -80,7 +80,8 @@ def ask_for_input():
 
 ask_for_input()
 ```
+- Below is a screenshot of the script in action.
 
-- 
+![alt text](milestone_3.png "Milestone 3 result")
 
 ## Milestone 4
