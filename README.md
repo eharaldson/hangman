@@ -85,3 +85,8 @@ ask_for_input()
 ![alt text](milestone_3.png "Milestone 3 result")
 
 ## Milestone 4
+- Created a class for Hangman with the constructor shown below using the magic method __init__:
+
+![alt text](milestone_4.png "Milestone 4 - Hangman constructor")
+
+- Also created the methods check_guess and ask_for_input that use code from the previous milestone but also adds more functionality such as having word_guessed which is a list of _ for each unguessed letter and updates when a letter is guessed right.
