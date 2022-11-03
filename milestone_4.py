@@ -15,4 +15,23 @@ class Hangman:
         self.word_list = word_list                          # List of words to pick from.
         self.list_of_guesses = []                           # Letters that have been guessed by player.
 
+    def check_guess(self, guess):
+        guess.lower()
+        if guess in self.word:
+            print(f"Good guess! {guess} is in the word.")
+
+    def ask_for_input(self):
+        while True:
+            guess = input("Enter a letter: ")
+            if len(guess) != 1 or guess.isalpha() == False:
+                print("Invalid letter. Please, enter a single alphabetical character.")
+            elif guess in self.list_of_guesses:
+                print("You already tried that letter!")
+            else:
+                self.check_guess(guess)
+                self.list_of_guesses.append(guess)
+                break
+
 game1 = Hangman(['apple', 'banana'])
+
+game1.ask_for_input()
