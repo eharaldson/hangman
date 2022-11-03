@@ -90,3 +90,16 @@ ask_for_input()
 ![alt text](milestone_4.png "Milestone 4 - Hangman constructor")
 
 - Also created the methods check_guess and ask_for_input that use code from the previous milestone but also adds more functionality such as having word_guessed which is a list of _ for each unguessed letter and updates when a letter is guessed right.
+
+## Milestone 5
+- The finished product is found in the milestone_5.py. The instance of the Hangman class (game in the code) acts as a snapshot of the game you are playing; keeping track of the word for that game, the guesses the player has made, the number of lives left etc. I defined a function play_game which loops to let the player play the game until they have won or lost by repeatedly calling the games ask_for_input method (basically a round of the game). The code for this function can be seen below:
+
+![alt text](milestone_5.png "Milestone 5 - play_game function")
+
+- An example usage of the game where the player wins can be seen below:
+
+![alt text](milestone_5_win.png "Milestone 5 - Player winning")
+
+- When the player loses it looks like this:
+
+![alt text](milestone_5_lose.png "Milestone 5 - Player losing")
